@@ -4,8 +4,6 @@
 # Build output
 /dist
 
-# Static files
-/public
 
 # Vite cache
 /.vite
