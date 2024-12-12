@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import RecipeList from "./components/RecipleList";
 import SearchBar from "./components/SearchBar";
 import CarouselComponent from "./components/CarouselComponent";
-import NotFound from "./components/NotFound ";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
