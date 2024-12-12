@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const RecipeList: React.FC = () => {
   return (
@@ -12,7 +13,9 @@ const RecipeList: React.FC = () => {
             <Card.Body>
               <Card.Title>Recipe 1</Card.Title>
               <Card.Text>A brief description of Recipe 1.</Card.Text>
-              <Button variant="primary">View Recipe</Button>
+              <Link to="/recipe/view/">
+                <Button variant="primary">View Recipe</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -22,7 +25,9 @@ const RecipeList: React.FC = () => {
             <Card.Body>
               <Card.Title>Recipe 2</Card.Title>
               <Card.Text>A brief description of Recipe 2.</Card.Text>
-              <Button variant="primary">View Recipe</Button>
+              <Link to="/recipe/view/">
+                <Button variant="primary">View Recipe</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>
@@ -32,7 +37,9 @@ const RecipeList: React.FC = () => {
             <Card.Body>
               <Card.Title>Recipe 3</Card.Title>
               <Card.Text>A brief description of Recipe 3.</Card.Text>
-              <Button variant="primary">View Recipe</Button>
+              <Link to="/recipe/view/">
+                <Button variant="primary">View Recipe</Button>
+              </Link>
             </Card.Body>
           </Card>
         </Col>

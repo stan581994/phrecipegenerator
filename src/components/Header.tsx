@@ -5,10 +5,10 @@ const Header: React.FC = () => {
   return (
     <Navbar bg="primary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/home">
           <img
             alt=""
-            src="recipe.svg"
+            src="/recipe.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"

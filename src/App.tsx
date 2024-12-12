@@ -5,6 +5,7 @@ import RecipeList from "./components/RecipleList";
 import SearchBar from "./components/SearchBar";
 import CarouselComponent from "./components/CarouselComponent";
 import NotFound from "./components/NotFound";
+import ViewRecipe from "./components/ViewRecipe";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/recipe/view/" element={<ViewRecipe />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
