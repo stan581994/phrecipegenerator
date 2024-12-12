@@ -1,0 +1,8 @@
+/* FILE: SearchBar.css */
+.search-bar-form {
+  width: 100%;
+}
+
+.search-bar-form .form-control {
+  flex: 1;
+}

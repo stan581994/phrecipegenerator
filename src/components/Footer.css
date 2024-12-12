@@ -1,0 +1,13 @@
+/* FILE: Footer.css */
+.footer {
+  background-color: #0038A8; /* Blue color from the Philippine flag */
+  color: white; /* Gold color from the Philippine flag */
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+}
