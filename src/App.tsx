@@ -26,7 +26,6 @@ const Home: React.FC = () => (
   <div>
     <CarouselComponent />
     <SearchBar />
-    <RecipeList />
   </div>
 );
 
