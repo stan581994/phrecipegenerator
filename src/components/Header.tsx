@@ -1,11 +1,13 @@
 import React from "react";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { FaHeart } from "react-icons/fa";
 
 const Header: React.FC = () => {
   return (
     <Navbar bg="primary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="/home">
+        <Navbar.Brand as={Link} to="/home">
           <img
             alt=""
             src="/recipe.svg"
@@ -15,6 +17,11 @@ const Header: React.FC = () => {
           />{" "}
           Philippine Recipe Generator
         </Navbar.Brand>
+        <Nav className="ml-auto">
+          <Nav.Link as={Link} to="/recipe/myfavorite">
+            <FaHeart color="white" size="1.5em" />
+          </Nav.Link>
+        </Nav>
       </Container>
     </Navbar>
   );

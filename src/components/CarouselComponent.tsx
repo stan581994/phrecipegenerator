@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel, Button } from "react-bootstrap";
 import "./CarouselComponent.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
 const CarouselComponent: React.FC = () => {
   return (
@@ -33,9 +34,11 @@ const CarouselComponent: React.FC = () => {
             tamarind-based broth, making it a favorite in many Filipino
             households.
           </p>
-          <Button variant="warning" className="carousel-button">
-            Generate Recipe Now!
-          </Button>
+          <Link to={`/recipe/view/Sinigang`}>
+            <Button variant="warning" className="carousel-button">
+              Generate Recipe Now!
+            </Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -52,9 +55,11 @@ const CarouselComponent: React.FC = () => {
             vegetables wrapped in a thin crepe and fried to a crispy perfection.
             It's a popular street food that is both healthy and satisfying.
           </p>
-          <Button variant="warning" className="carousel-button">
-            Generate Recipe Now!
-          </Button>
+          <Link to={`/recipe/view/Kare-Kare`}>
+            <Button variant="warning" className="carousel-button">
+              Generate Recipe Now!
+            </Button>
+          </Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -14,7 +14,6 @@ const RecipeList: React.FC<RecipeListProps> = ({ recipes }) => {
 
   return (
     <Container className="fade-in">
-      <h2 className="my-4">Recipes</h2>
       <Row>
         {recipeArray.map((recipe, index) => (
           <Col key={index} md={4}>
@@ -27,7 +26,7 @@ const RecipeList: React.FC<RecipeListProps> = ({ recipes }) => {
               <Card.Body>
                 <Card.Title>{recipe.dishName}</Card.Title>
                 <Card.Text>A brief description of {recipe.dishName}.</Card.Text>
-                <Link to="/recipe/view/">
+                <Link to={`/recipe/view/${recipe.dishName}`}>
                   <Button variant="primary">View Recipe</Button>
                 </Link>
               </Card.Body>
