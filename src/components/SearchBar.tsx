@@ -17,13 +17,19 @@ const SearchBar: React.FC = () => {
 
   const fetchRecipes = async (url: string) => {
     try {
+      resetRecipes();
       const response = await fetch(url);
       const data: RecipeModel[] = await response.json();
-      console.log(data);
+      console.log("URL:", url);
+      console.log("Fetching data from API:", data);
       setRecipes(data);
     } catch (error) {
       console.error("Error fetching recipes:", error);
     }
+  };
+
+  const resetRecipes = () => {
+    setRecipes([]);
   };
 
   const handleSearch = (event: React.FormEvent) => {
@@ -106,9 +112,11 @@ const SearchBar: React.FC = () => {
           </Button>
         </Col>
       </Row>
-      <Row className="justify-content-center mt-3">
-        <RecipeList recipes={recipes} />
-      </Row>
+      {recipes.length > 0 && (
+        <Row className="justify-content-center mt-3">
+          <RecipeList recipes={recipes} />
+        </Row>
+      )}
     </Container>
   );
 };

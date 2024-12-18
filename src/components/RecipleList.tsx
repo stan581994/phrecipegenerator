@@ -13,7 +13,7 @@ const RecipeList: React.FC<RecipeListProps> = ({ recipes }) => {
   const recipeArray = Array.isArray(recipes) ? recipes : [recipes];
 
   return (
-    <Container>
+    <Container className="fade-in">
       <h2 className="my-4">Recipes</h2>
       <Row>
         {recipeArray.map((recipe, index) => (
